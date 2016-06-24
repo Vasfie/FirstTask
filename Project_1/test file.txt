@@ -1,12 +1,4 @@
-require 'test/unit'
-require 'selenium-webdriver'
 
-class TestLogin < Test::Unit::TestCase
-
-  def setup
-    @browser = Selenium::WebDriver.for :firefox
-    @wait = Selenium::WebDriver::Wait.new(:timeout => 15)
-  end
 
   def test_userlogin
     @browser.navigate.to 'http://demo.redmine.org'
@@ -21,8 +13,4 @@ class TestLogin < Test::Unit::TestCase
     assert(@browser.find_element(:id, 'registration').displayed?)
   end
 
-  def teardown
-    @browser.quit
-  end
-end
 
