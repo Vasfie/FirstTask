@@ -1,0 +1,13 @@
+Git stash command takes the dirty state of working directory,  modified tracked files and staged changes and saves it on a stack of unfinished changes that you can reapply at any time.
+
+Git reset command Reset current HEAD to the specified state. 
+In general, git reset’s function is to take the current branch and reset it to point somewhere else, and possibly bring the index and work tree along.
+
+Cherry picking in git means to choose a commit from one branch and apply it onto another.
+It can be done if you e.g. made a mistake and committed a change into wrong branch, but do not want to merge the whole branch. You can just e.g. revert the commit and cherry-pick it on another branch.
+Make sure you are on the branch you want apply the commit to.
+git checkout master
+Execute the following:
+git cherry-pick <commit-hash
+
+Git rm Remove files from the index, or from the working tree and the index. git rm will not remove a file from just your working directory.

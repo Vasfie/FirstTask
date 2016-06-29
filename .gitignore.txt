@@ -1,9 +1,1 @@
-<<<<<<< HEAD
 test_user_addition
-Gemfile
-Gemfile.lock
-=======
-
-test_user_addition
-
->>>>>>> master
